@@ -36,12 +36,18 @@ public class PopupValidationDefinition {
 
         for(int i=1; i<cells.size(); i++){
             colorlibFormValidationSteps.diligenciar_popup_datos_tabla(cells, i);
-
+                try{
+                    Thread.sleep(5000);
+                }catch(InterruptedException e){}
         }
     }
     @Then("I verify successful entry")
     public void i_verify_successful_entry() {
         colorlibFormValidationSteps.verificar_ingreso_datos_formulario_exitoso();
+    }
+    @Then("verify that the Validation Information Balloon is presented")
+    public void verify_that_the_validation_information_balloon_is_presented() {
+        colorlibFormValidationSteps.verificar_ingreso_datos_formulario_con_errores();
     }
 
 }

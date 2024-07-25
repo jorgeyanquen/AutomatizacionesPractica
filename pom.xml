@@ -68,6 +68,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>net.sf.jt400</groupId>
+            <artifactId>jt400-full</artifactId>
+            <version>6.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>

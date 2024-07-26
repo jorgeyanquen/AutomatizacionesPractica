@@ -157,4 +157,6 @@ public class ColorlibFormValidationPage extends PageObject {
     public void form_con_errores(){
         assertThat(globoInformativo.isCurrentlyVisible(), is(true));
     }
+
+
 }
